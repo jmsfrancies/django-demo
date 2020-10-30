@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+# The url file for the django-demo project
 urlpatterns = [
+    # url for the admin site
     path('admin/', admin.site.urls),
+    # url for the Contact app url file
     path('', include('contact.urls')),
+    # url for the Blog app url file
     path('', include('blog.urls')),
 ]
