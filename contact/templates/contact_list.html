@@ -1,1 +1,10 @@
-<h1>Contact List</h1>
+<h1 style="text-align:center">Blog List</h1>
+<div style="text-align:center">  
+    {% for contact in Contacts %}
+    <h2>{{contact.first_name}}</h2>
+    <br>
+    <h2>{{contact.last_name}}</h2>
+    <br>
+    <h2>{{contact.email}}</h2>
+    {% endfor %}
+</div>

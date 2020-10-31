@@ -1,1 +1,10 @@
-<h1>Blog List</h1>
+<h1 style="text-align:center">Blog List</h1>
+
+{% for blog in blogs %}
+    <h2>{{blog.title}}</h2>
+    <br>
+    <h2>{{blog.description}}</h2>
+    <br>
+    <h2>{{blog.pub_date}}</h2>
+{% endfor %}
+
