@@ -1,6 +1,6 @@
 from django.urls import resolve,reverse
 from django.test import TestCase
-from blog.views import blog_list
+from blog.views import *
 # Blog unit tests to determine if the Blog app's urls are locatable!
 class TestViews(TestCase):
     # Test to determine if the url to the blog list page is findable!

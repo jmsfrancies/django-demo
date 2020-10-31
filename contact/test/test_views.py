@@ -1,6 +1,6 @@
 from django.urls import resolve,reverse
 from django.test import TestCase
-from contact.views import contact_list
+from contact.views import *
 #Contact unit tests to test the views of the contact list app!
 class TestViews(TestCase):
     # test to determine if the url to the contact list page is visible
