@@ -2,7 +2,7 @@ from django.urls import path, include
 from . import views
 from .models import Contact
 # App name of the Contact
-# To add the name of the url path to any link, 
+# To add the name of the url path to any link within html, 
 # you must use the name "Contact:{whichever path name you need to use}" 
 app_name= "Contact"
 
