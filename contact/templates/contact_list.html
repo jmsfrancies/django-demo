@@ -1,12 +1,21 @@
-<h1 style="text-align:center">Contacts List</h1>
-<div style="text-align:center">  
+<div style="text-align: center">
+  <table style="width: 100%">
+    <tr>
+      <th>Contacts List</th>
+    </tr>
+    <tr>
+      <th>Firstname</th>
+      <th style="text-align: left">Lastname</th>
+      <th style="text-align: left">Age</th>
+    </tr>
     {% for contact in contacts %}
-        <h2>{{contact.first_name}}</h2>
-        <br>
-        <h2>{{contact.last_name}}</h2>
-        <br>
-        <h2>{{contact.email}}</h2>
+    <tr>
+      <td>{{contact.first_name}}</td>
+      <td>{{contact.last_name}}</td>
+      <td>{{contact.email}}</td>
+    </tr>
     {% endfor %}
+  </table>
 </div>
 
 <a href="{% url 'Blog:blog_list'%}">Blog List</a>

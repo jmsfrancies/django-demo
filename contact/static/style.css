@@ -1,0 +1,8 @@
+/* heading 1, table, and table header inherit these properties in common. */
+.h1,
+.table,
+.th,
+.tr
+{
+    text-align:center;
+}

@@ -1,11 +1,9 @@
 <h1 style="text-align:center">Blog List</h1>
 
 {% for blog in blogs %}
-    <h2>{{blog.title}}</h2>
-    <br>
-    <h2>{{blog.description}}</h2>
-    <br>
-    <h2>{{blog.pub_date}}</h2>
+    <h3>{{blog.title}}</h3>
+    <p>{{blog.description}}</p>
+    <p>{{blog.pub_date}}</p>
 {% endfor %}
 
 <a href="{% url 'Contact:contact_list'%}">Contact List</a>
