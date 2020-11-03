@@ -11,11 +11,15 @@
 ### values will be install into the pipfile, then all that you will need 
 ### to install the development packages.
 ### Basic Troubleshooting:
-#### psycopg2 doesn't want to install?
+### Need Homebrew?
+#### /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+##### reference: https://brew.sh
+### psycopg2 doesn't want to install?
+#### brew info openssl
 #### echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
 #### export LDFLAGS="-L/usr/local/opt/openssl/lib"
 #### export CPPFLAGS="-I/usr/local/opt/openssl/include"
 #### medium article reference: 
-#### https://medium.com/@codelovingyogi/ld-library-not-found-for-lssl-530911bdbb43
+##### https://medium.com/@codelovingyogi/ld-library-not-found-for-lssl-530911bdbb43
 
 ##### feel free to comment
