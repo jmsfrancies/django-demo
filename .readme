@@ -1,3 +1,9 @@
-### Django-Demo for recruiters and friends alike! 
-
+## Basic Django-Demo for recruiters and friends alike! 
+## Instructions to start the project:
+### pip3 install pipenv
+### With the requirements.txt file already inside of this repository.
+### Once pipenv shell is typed into the cli the requirements.txt file
+### values will be install into the pipfile, then all that you will need 
+### is the pipenv shell command and to type the 
+### pipenv install django psycopg2 --dev 
 #### feel free to comment
