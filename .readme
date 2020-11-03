@@ -1,9 +1,21 @@
 ## Basic Django-Demo for recruiters and friends alike! 
 ## Instructions to start the project:
-### pip3 install pipenv
+### CLI commands to run on MacOS:
+#### - pip3 install pipenv
+#### - pipenv install django psycopg2 --dev
+#### - python3 manage.py makemigrations
+#### - python3 manage.py migrate
+#### - python3 manage.py runserver 
 ### With the requirements.txt file already inside of this repository.
 ### Once pipenv shell is typed into the cli the requirements.txt file
 ### values will be install into the pipfile, then all that you will need 
-### is the pipenv shell command and to type the 
-### pipenv install django psycopg2 --dev 
-#### feel free to comment
+### to install the development packages.
+### Basic Troubleshooting:
+#### psycopg2 doesn't want to install?
+#### echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+#### export LDFLAGS="-L/usr/local/opt/openssl/lib"
+#### export CPPFLAGS="-I/usr/local/opt/openssl/include"
+#### medium article reference: 
+#### https://medium.com/@codelovingyogi/ld-library-not-found-for-lssl-530911bdbb43
+
+##### feel free to comment
