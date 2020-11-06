@@ -1,7 +1,10 @@
-<div style="text-align: center">
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<div style="text-align: left">
   <table style="width: 100%">
     <tr>
-      <th>Contacts List</th>
+      <th><h1>Contacts</h1></th>
     </tr>
     <tr>
       <th>Firstname</th>
@@ -19,3 +22,4 @@
 </div>
 
 <a href="{% url 'Blog:blog_list'%}">Blog List</a>
+{% endblock content %}
