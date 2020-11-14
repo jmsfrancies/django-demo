@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>Django-Demo</title>
 
     <!-- Bootstrap core CSS -->
     <link
@@ -26,16 +26,13 @@
     <div class="d-flex" id="wrapper">
       <!-- Sidebar -->
       <div class="bg-light border-right" id="sidebar-wrapper">
-        <div class="sidebar-heading">Start Bootstrap</div>
+        <div class="sidebar-heading">Django-Demo</div>
         <div class="list-group list-group-flush">
           <a href="{% url 'Contact:contact_list'%}"class="list-group-item list-group-item-action bg-light"
             >Contacts</a
           >
           <a href="{% url 'Blog:blog_list'%}" class="list-group-item list-group-item-action bg-light"
             >Blogs</a>
-          <a href="#" class="list-group-item list-group-item-action bg-light"
-            >Status</a
-          >
         </div>
       </div>
       <!-- /#sidebar-wrapper -->
@@ -62,12 +59,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" href="#"
+                <a class="nav-link" href="{% url 'Contact:contact_list'%}"
                   >Home <span class="sr-only">(current)</span></a
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -79,14 +73,14 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Drop Down Menu
                 </a>
                 <div
                   class="dropdown-menu dropdown-menu-right"
                   aria-labelledby="navbarDropdown"
                 >
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="{% url 'Contact:contact_list'%}">Contacts</a>
+                  <a class="dropdown-item" href="{% url 'Blog:blog_list'%}">Blog</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>

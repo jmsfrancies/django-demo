@@ -4,18 +4,22 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-django = "*"
 psycopg2 = "*"
 djangorestframework = "*"
-markdown = "*"
 django-filter = "*"
+Django = "*"
+Markdown = "*"
+django-heroku = "*"
 
 [packages]
-django = "*"
-psycopg2 = "*"
+psycopg2 = "==2.8.6"
 djangorestframework = "*"
-markdown = "*"
 django-filter = "*"
+asgiref = "==3.2.10"
+pytz = "==2020.1"
+sqlparse = "==0.4.1"
+Django = "==3.1.2"
+Markdown = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.9"
