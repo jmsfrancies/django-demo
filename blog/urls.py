@@ -8,5 +8,5 @@ app_name="Blog"
 
 urlpatterns = [
     # url path to the main blog view!
-    path('blog/', views.blog_list, name="blog_list"),
+    path('blogs/', views.blog_list, name="blog_list"),
 ]
